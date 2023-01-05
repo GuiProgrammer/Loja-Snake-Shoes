@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica;
+    background: rgb(19, 19, 19);
+    color: white;
+}
+
+header {
+    background: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+header :where(.navbar, .list, .list-item,a){
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+header > h1 {
+    cursor: pointer;
+}
+
+.list-item{
+    transition: .5s all ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.list-item:hover{
+    border-bottom:  3px solid #fff;
+    cursor: pointer;
+}
+
+main{
+    color: black;
+    background: white;
+    padding: 20px 40px;
+}
+
+section{
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    display: inline-block;
+    transition: .5s all ease-in-out;
+    border: 2px solid transparent;
+}
+
+section img{
+    width: 100% ;
+    margin: 0 auto;
+    height: 150px;
+    cursor: pointer;
+}
+
+
+section:hover{
+    border: 2px solid black;
+
+}
+
+h3 span p {
+    text-align: justify;
+}
+
+section :where(button){
+    background: #03a703;
+    padding: 10px;
+    border: 1px solid #03a703;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    transition: .3s all ease-in-out;
+}
+
+section :where(button):hover{
+    cursor: pointer;
+    background: #056905;
+    border: 1px solid #056905;
+}
+
+footer {
+    background: blue;
+    padding: 50px;
+    text-align: center;
+}
